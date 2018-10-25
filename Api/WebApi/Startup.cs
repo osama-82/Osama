@@ -25,7 +25,7 @@ namespace WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var connection = @"Server=L0058899\LOCAL14;Database=master;Trusted_Connection=True;ConnectRetryCount=0";
+            var connection = @"Server=L0058899\LOCAL14;Database=PTC;Trusted_Connection=True;ConnectRetryCount=0";
             services.AddDbContext<masterContext>
             (options => options.UseSqlServer(connection));
 
